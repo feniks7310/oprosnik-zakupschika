@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Итоговый опросник для уходящего менеджера-закупщика: ИП Сучков / LiteBuy / ОЧАГ. Электрика и печное оборудование, Красноярск." />
+  <title>Опросник закупщика — LiteBuy / ОЧАГ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9D%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- Фон: анимированный mesh-градиент + зерно -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- Прогресс -->
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <!-- Главный экран -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-glass">
+        <span class="eyebrow">ИП Сучков · LiteBuy · ОЧАГ</span>
+        <h1>Опросник <span class="gradient-text">закупщика</span></h1>
+        <p class="lead">
+          Передача знаний с уходящим менеджером: поставщики, ассортимент, склад,
+          отчёты и документы. 13 блоков, ~145 открытых вопросов —
+          только цифры, названия, процедуры и места хранения.
+        </p>
+        <div class="hero-meta">
+          <span class="chip">⚡ Электрика: TDM Electric, ИЭК, REXANT</span>
+          <span class="chip">🔥 Печи: 50+ брендов, дымоходы</span>
+          <span class="chip">📦 Склад: Красноярск, ул. Томская 4</span>
+          <span class="chip">🤝 Тон: совместный разбор, без давления</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">Листайте вниз</div>
+  </header>
+
+  <main>
+    <!-- Блоки опросника -->
+    <section class="section" id="blocks-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Блоки опросника</h2>
+          <p>Каждый блок раскрывается по клику. В конце каждого блока — добивающие техники: «Где это посмотреть?», «Кто ещё это знает?», «Покажи последний пример».</p>
+        </div>
+        <div class="toolbar">
+          <button class="btn-ghost" id="toggleAll" type="button">Развернуть все блоки</button>
+        </div>
+        <div class="blocks" id="blocks">
+          <!-- карточки рендерит script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Шпаргалка -->
+    <section class="section cheat" id="cheat">
+      <div class="container">
+        <div class="section-head">
+          <h2>Шпаргалка: <span class="gradient-text">Топ-10 на первый день</span></h2>
+          <p>Если времени вагон — спросите эти десять вещей. Остальное догоните по блокам выше.</p>
+        </div>
+        <div class="cheat-grid" id="cheatGrid">
+          <!-- карточки рендерит script.js -->
+        </div>
+
+        <div class="tone-note">
+          <strong>Напоминание о тоне:</strong> вопросы — это просьба показать процедуру или место хранения, а не требование отчитаться.
+          Никаких «ты обязан» — только «покажи, пожалуйста, как это работает».
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">Опросник закупщика · LiteBuy / ОЧАГ · Красноярск</div>
+      <div>Материалы: 01_ассортимент_и_бренды.md · 02_опросник_финальный.md · 03_обучение_закупщика.md</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
